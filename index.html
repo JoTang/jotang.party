@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JoTang</title>
+    <style>
+        body {
+            background-color: bisque;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        @keyframes spin {
+            from {transform:rotate(0deg);}
+            to {transform:rotate(360deg);}
+        }
+
+        .logo {
+            height: 200px;
+            width: 200px;
+            animation: spin 5s infinite linear;
+        }
+
+        .logo:hover {
+            animation-duration: .1s;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="logo">
+    <img src="jotang.png">
+</div>
+<div class="name">
+    <img src="text.png">
+</div>
+</body>
+</html>
