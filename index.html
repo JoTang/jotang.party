@@ -11,14 +11,28 @@
                 "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC",
                 "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
             background-color: bisque;
+            justify-content: center;
             display: flex;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
         }
+
         @keyframes spin {
             from {transform:rotate(0deg);}
             to {transform:rotate(360deg);}
+        }
+
+        .brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @media (min-width: 800px){
+            .brand {
+                flex-direction: row;
+            }
         }
 
         .logo {
@@ -37,11 +51,13 @@
     </style>
 </head>
 <body>
-<div class="logo">
-    <img src="jotang.png">
-</div>
-<div class="name">
-    <img src="text.png">
+<div class="brand">
+    <div class="logo">
+        <img src="jotang.png">
+    </div>
+    <div class="name">
+        <img src="text.png">
+    </div>
 </div>
 </body>
 </html>
