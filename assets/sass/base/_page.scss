@@ -26,7 +26,7 @@
 	body {
 		background-color: _palette(bg);
 		@include vendor('background-image', (
-			'url("images/overlay.png")',
+			'url("http://ov1h2uvae.bkt.clouddn.com/overlay.png")',
 			'linear-gradient(45deg, #{_palette(bg1)} 15%, #{_palette(bg2) 85%})',
 		));
 
